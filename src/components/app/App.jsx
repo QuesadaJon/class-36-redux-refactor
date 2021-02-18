@@ -1,10 +1,11 @@
 import React from 'react';
+import BlogForm from '../form/BlogForm';
 
 function App() {
   return (
     <>
       <BlogForm />
-      <BlogList />
+      {/* <BlogList /> */}
     </>
   );
 }
