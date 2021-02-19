@@ -1,42 +1,22 @@
 import React from 'react';
-import { useSelector } from '../../state/DogProvider';
+import { getBlogs } from '../../selectors/blogSelectors';
+import {  useSelector } from '../../state/BlogProvider';
 import Blog from './Blog';
 
 const BlogList = () => {
   const blogs = useSelector(getBlogs);
-
   const blogElements = blogs.map(blog => (
-    <li key={blog.name}>
+    <li key={blog.title}>
       <Blog {...blog} />
     </li>
   ));
 
   return (
     <ul>
+      <h1>Blog Posts</h1>
       {blogElements}
     </ul>
   );
 };
 
 export default BlogList;
-// import { useSelector } from '../../state/DogProvider';
-// import { getDogs } from '../../selectors/dogSelectors';
-// import Dog from './Dog';
-
-// const DogList = () => {
-//   const dogs = useSelector(getDogs);
-
-//   const dogElements = dogs.map(dog => (
-//     <li key={dog.name}>
-//       <Dog {...dog} />
-//     </li>
-//   ));
-
-//   return (
-//     <ul>
-//       {dogElements}
-//     </ul>
-//   );
-// };
-
-// export default DogList;

@@ -1,7 +1,3 @@
-// import React, { useState } from 'react';
-// import { createDog } from '../../actions/dogActions';
-// import { useDispatch } from '../../state/DogProvider';
-
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from '../../state/BlogProvider';

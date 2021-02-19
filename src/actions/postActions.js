@@ -9,6 +9,12 @@ export const createBlog = blog => ({
   payload: blog
 });
 
+export const DELETE_BLOG = 'DELETE_BLOG';
+export const deleteBlog = (title, body) => ({
+  type: DELETE_BLOG,
+  payload: { title, body }
+});
+
 //EXAMPLE
   
 // export const CREATE_DOG = 'CREATE_DOG';
