@@ -1,30 +1,14 @@
 import React from 'react';
 import BlogForm from '../form/BlogForm';
+import BlogList from '../blog/BlogList';
 
 function App() {
   return (
     <>
       <BlogForm />
-      {/* <BlogList /> */}
+      <BlogList />
     </>
   );
 }
 
 export default App;
-
-
-  
-// import React from 'react';
-// import DogList from '../dogs/DogList';
-// import DogForm from '../form/DogForm';
-
-// function App() {
-//   return (
-//     <>
-//       <DogForm />
-//       <DogList />
-//     </>
-//   );
-// }
-
-// export default App;
