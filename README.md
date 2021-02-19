@@ -1,4 +1,4 @@
-# class-35-blog
+# class-36-redux-refactor
 
 ##Ruberic
 * 3 points for actions
